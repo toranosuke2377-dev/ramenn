@@ -1,0 +1,86 @@
+.container {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #444;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.separator {
+    height: 1px;
+    background: #444;
+    margin: 2px 0;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.toggle {
+    width: 36px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.toggle.active {
+    background-color: #d1ad15;
+}
+
+.knob {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s;
+}
+
+.toggle.active .knob {
+    transform: translateX(16px);
+}
+
+.inputRow {
+    margin-top: 5px;
+}
+
+.apiKeyInput {
+    width: 100px;
+    background: #222;
+    border: 1px solid #555;
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.apiKeyInput:focus {
+    outline: none;
+    border-color: #d1ad15;
+}

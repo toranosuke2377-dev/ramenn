@@ -1,0 +1,52 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.title {
+    font-size: 64px;
+    margin: 0 0 20px 0;
+    text-shadow: 0 0 20px currentColor;
+    transform: rotate(-5deg);
+}
+
+.message {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.button {
+    padding: 15px 40px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.1s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
